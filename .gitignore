@@ -6,6 +6,9 @@
 # insumos (conteúdo bruto, não versionar)
 insumos/
 
+# mcp local overrides
+.mcp.local.json
+
 # deps
 node_modules/
 
