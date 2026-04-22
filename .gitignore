@@ -1,0 +1,28 @@
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# insumos (conteúdo bruto, não versionar)
+insumos/
+
+# deps
+node_modules/
+
+# build
+dist/
+.astro/
+.output/
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# editor
+.vscode/
+.idea/
