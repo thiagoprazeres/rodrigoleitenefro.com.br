@@ -1,0 +1,29 @@
+{
+  "name": "rodrigoleitenefro.com.br",
+  "version": "1.0.0",
+  "description": "Launchpad do Dr. Rodrigo Leite.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ideogram": "node scripts/ideogram.mjs",
+    "recraft": "node scripts/recraft.mjs",
+    "netlify": "netlify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagoprazeres/rodrigoleitenefro.com.br.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/thiagoprazeres/rodrigoleitenefro.com.br/issues"
+  },
+  "homepage": "https://github.com/thiagoprazeres/rodrigoleitenefro.com.br#readme",
+  "private": "true",
+  "devDependencies": {
+    "dotenv": "^17.4.2",
+    "netlify-cli": "^25.2.0"
+  }
+}
