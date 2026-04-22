@@ -12,7 +12,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "format": "prettier --write src"
   },
   "repository": {
     "type": "git",
@@ -28,11 +30,16 @@
   "homepage": "https://github.com/thiagoprazeres/rodrigoleitenefro.com.br#readme",
   "private": "true",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@google/gemini-cli": "^0.38.2",
     "dotenv": "^17.4.2",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
     "netlify-cli": "^25.2.0",
+    "prettier": "^3.8.3",
     "sass": "^1.99.0",
     "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.0",
     "vite": "^8.0.9"
   }
 }
