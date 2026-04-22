@@ -7,7 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "ideogram": "node scripts/ideogram.mjs",
     "recraft": "node scripts/recraft.mjs",
-    "netlify": "netlify"
+    "netlify": "netlify",
+    "gemini": "gemini",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -23,7 +28,11 @@
   "homepage": "https://github.com/thiagoprazeres/rodrigoleitenefro.com.br#readme",
   "private": "true",
   "devDependencies": {
+    "@google/gemini-cli": "^0.38.2",
     "dotenv": "^17.4.2",
-    "netlify-cli": "^25.2.0"
+    "netlify-cli": "^25.2.0",
+    "sass": "^1.99.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9"
   }
 }
