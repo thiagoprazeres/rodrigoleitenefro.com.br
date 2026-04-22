@@ -1,9 +1,20 @@
+/// <reference types="vite/client" />
+
+interface FbqFn {
+  (...args: unknown[]): void;
+  callMethod?: (...args: unknown[]) => void;
+  queue: unknown[];
+  push: FbqFn;
+  loaded: boolean;
+  version: string;
+}
+
 declare global {
   interface Window {
     gtag: (...args: unknown[]) => void;
     dataLayer: unknown[];
-    fbq: (...args: unknown[]) => void;
-    _fbq: unknown;
+    fbq: FbqFn;
+    _fbq?: FbqFn;
   }
 }
 
@@ -29,25 +40,22 @@ function loadGtag(measurementId: string): void {
   };
   window.gtag('js', new Date());
   window.gtag('config', measurementId, { anonymize_ip: true });
-
   if (ADS_ID) window.gtag('config', ADS_ID);
 }
 
 function loadMetaPixel(pixelId: string): void {
-  // Meta Pixel base code
-  window.fbq = function (...args: unknown[]) {
-    if (window.fbq.callMethod) {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-      (window.fbq as unknown as { callMethod: (...a: unknown[]) => void }).callMethod(...args);
-    } else {
-      (window.fbq as unknown as { queue: unknown[] }).queue.push(args);
-    }
-  };
-  if (!window._fbq) window._fbq = window.fbq;
-  (window.fbq as unknown as { push: unknown; loaded: boolean; version: string; queue: unknown[] }).push = window.fbq;
-  (window.fbq as unknown as { loaded: boolean }).loaded = true;
-  (window.fbq as unknown as { version: string }).version = '2.0';
-  (window.fbq as unknown as { queue: unknown[] }).queue = [];
+  const fbq: FbqFn = function (...args: unknown[]) {
+    if (fbq.callMethod) fbq.callMethod(...args);
+    else fbq.queue.push(args);
+  } as FbqFn;
+
+  fbq.queue = [];
+  fbq.push = fbq;
+  fbq.loaded = true;
+  fbq.version = '2.0';
+
+  window.fbq = fbq;
+  if (!window._fbq) window._fbq = fbq;
 
   const script = document.createElement('script');
   script.async = true;
