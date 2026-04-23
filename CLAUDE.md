@@ -49,7 +49,7 @@ Modelo: `claude-opus-4-7`
 - **Milestone = fase MAPA** (M, A, P, A)
 - **Issue = entregável atômico** com Definition of Done checklist
 - **Release = versão publicada em produção** (tag vX.Y.Z)
-- **Labels:** `fase:M` `fase:A` `fase:P` `fase:A` `tipo:bug` `tipo:feat` `tipo:chore` `tipo:docs` `prioridade:alta` `bloqueado`
+- **Labels:** `fase:mapeamento` `fase:arquitetura` `fase:prototipacao` `fase:aprendizagem` `tipo:bug` `tipo:feat` `tipo:chore` `tipo:docs` `prioridade:alta` `bloqueado`
 - Definition of Done padrão: typecheck ✓ · build ✓ · Lighthouse ≥ 95 · code review ✓ · deploy preview ✓
 
 ## Fases MAPA
