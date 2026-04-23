@@ -1,15 +1,5 @@
+@use 'fonts';
 @use 'tokens';
+@use 'reset';
+@use 'typography-base';
 @use 'components';
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  font-family: tokens.$font-family-sans;
-  line-height: 1.5;
-}

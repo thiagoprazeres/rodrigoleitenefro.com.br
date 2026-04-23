@@ -1,0 +1,81 @@
+@use 'tokens';
+
+html {
+  font-family: tokens.$font-family-sans;
+  font-size: tokens.$font-size-md;
+  line-height: tokens.$line-height-normal;
+}
+
+body {
+  color: tokens.$color-text-primary;
+  background: tokens.$color-background;
+  font-weight: tokens.$font-weight-regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: tokens.$color-text-primary;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: tokens.$letter-spacing-normal;
+}
+
+h1 {
+  font-size: tokens.$font-size-4xl;
+  font-weight: tokens.$font-weight-extrabold;
+}
+
+h2 {
+  font-size: tokens.$font-size-3xl;
+  font-weight: tokens.$font-weight-extrabold;
+}
+
+h3 {
+  font-size: tokens.$font-size-2xl;
+  font-weight: tokens.$font-weight-extrabold;
+}
+
+h4 {
+  font-size: tokens.$font-size-xl;
+  font-weight: tokens.$font-weight-semibold;
+}
+
+h5 {
+  font-size: tokens.$font-size-lg;
+  font-weight: tokens.$font-weight-semibold;
+}
+
+h6 {
+  font-size: tokens.$font-size-md;
+  font-weight: tokens.$font-weight-semibold;
+}
+
+p {
+  color: tokens.$color-text-secondary;
+  font-size: tokens.$font-size-md;
+  line-height: tokens.$line-height-normal;
+}
+
+small {
+  font-size: tokens.$font-size-sm;
+  line-height: tokens.$line-height-normal;
+}
+
+a {
+  color: tokens.$color-link;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: tokens.$color-link-hover;
+}
+
+a:focus-visible {
+  border-radius: tokens.$radius-xs;
+  outline: 2px solid tokens.$color-focus-ring;
+  outline-offset: 3px;
+}
