@@ -1,0 +1,87 @@
+$color-primary-900: #10231b !default;
+$color-primary-800: #162f25 !default;
+$color-primary-700: #1b3a2d !default;
+$color-primary-600: #27513f !default;
+$color-primary-500: #356a54 !default;
+$color-primary-100: #e8f0ec !default;
+$color-primary-50: #f4f8f6 !default;
+
+$color-white: #ffffff !default;
+$color-off-white: #fbfaf7 !default;
+$color-cream: #f5f1e8 !default;
+
+$color-gold-700: #9f7f2f !default;
+$color-gold-600: #b99545 !default;
+$color-gold-500: #c9a961 !default;
+$color-gold-100: #f3ead2 !default;
+$color-gold-50: #fbf7eb !default;
+
+$color-neutral-950: #111814 !default;
+$color-neutral-900: #1f2723 !default;
+$color-neutral-800: #303a35 !default;
+$color-neutral-700: #47514c !default;
+$color-neutral-600: #65706a !default;
+$color-neutral-500: #87918c !default;
+$color-neutral-400: #a9b1ad !default;
+$color-neutral-300: #cbd1ce !default;
+$color-neutral-200: #e1e5e3 !default;
+$color-neutral-100: #eff2f0 !default;
+$color-neutral-50: #f8f9f8 !default;
+
+$color-success-700: #2f6b4f !default;
+$color-success-100: #e6f2ec !default;
+$color-error-700: #9b3d3a !default;
+$color-error-100: #f7e7e5 !default;
+$color-warning-700: #8a6424 !default;
+$color-warning-100: #f6eedc !default;
+
+$color-text-primary: $color-neutral-950 !default;
+$color-text-secondary: $color-neutral-700 !default;
+$color-text-muted: $color-neutral-600 !default;
+$color-text-inverse: $color-white !default;
+
+$color-background: $color-off-white !default;
+$color-background-subtle: $color-neutral-50 !default;
+$color-surface: $color-white !default;
+$color-surface-accent: $color-primary-50 !default;
+$color-border: $color-neutral-200 !default;
+$color-border-strong: $color-neutral-300 !default;
+$color-focus-ring: rgba($color-gold-500, 0.5) !default;
+
+$color-link: $color-primary-700 !default;
+$color-link-hover: $color-primary-600 !default;
+$color-disabled-bg: $color-neutral-100 !default;
+$color-disabled-text: $color-neutral-500 !default;
+
+$colors-primary: (
+  '900': $color-primary-900,
+  '800': $color-primary-800,
+  '700': $color-primary-700,
+  '600': $color-primary-600,
+  '500': $color-primary-500,
+  '100': $color-primary-100,
+  '50': $color-primary-50,
+) !default;
+
+$colors-neutral: (
+  '950': $color-neutral-950,
+  '900': $color-neutral-900,
+  '800': $color-neutral-800,
+  '700': $color-neutral-700,
+  '600': $color-neutral-600,
+  '500': $color-neutral-500,
+  '400': $color-neutral-400,
+  '300': $color-neutral-300,
+  '200': $color-neutral-200,
+  '100': $color-neutral-100,
+  '50': $color-neutral-50,
+) !default;
+
+$colors-semantic: (
+  'success': $color-success-700,
+  'success-subtle': $color-success-100,
+  'error': $color-error-700,
+  'error-subtle': $color-error-100,
+  'warning': $color-warning-700,
+  'warning-subtle': $color-warning-100,
+) !default;
