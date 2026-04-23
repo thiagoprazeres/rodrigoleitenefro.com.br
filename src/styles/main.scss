@@ -1,3 +1,5 @@
+@use 'tokens';
+
 *,
 *::before,
 *::after {
@@ -7,6 +9,6 @@
 }
 
 :root {
-  font-family: system-ui, sans-serif;
+  font-family: tokens.$font-family-sans;
   line-height: 1.5;
 }
