@@ -1,0 +1,75 @@
+@use '../tokens';
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: tokens.$space-sm;
+  padding: tokens.$space-sm tokens.$space-lg;
+  border: 1px solid transparent;
+  border-radius: tokens.$radius-md;
+  font-family: tokens.$font-family-sans;
+  font-size: tokens.$font-size-md;
+  font-weight: tokens.$font-weight-semibold;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+
+  &:focus-visible {
+    outline: 2px solid tokens.$color-focus-ring;
+    outline-offset: 2px;
+  }
+
+  &:disabled,
+  &[aria-disabled='true'] {
+    background: tokens.$color-disabled-bg;
+    color: tokens.$color-disabled-text;
+    cursor: not-allowed;
+  }
+}
+
+.btn--primary {
+  background: tokens.$color-primary-700;
+  color: tokens.$color-text-inverse;
+
+  &:hover:not(:disabled) {
+    background: tokens.$color-primary-800;
+  }
+
+  &:active:not(:disabled) {
+    background: tokens.$color-primary-900;
+  }
+}
+
+.btn--secondary {
+  background: transparent;
+  border-color: tokens.$color-primary-700;
+  color: tokens.$color-primary-700;
+
+  &:hover:not(:disabled) {
+    background: tokens.$color-primary-50;
+  }
+}
+
+.btn--link {
+  background: transparent;
+  color: tokens.$color-link;
+  padding-inline: 0;
+  font-weight: tokens.$font-weight-semibold;
+
+  &:hover:not(:disabled) {
+    color: tokens.$color-link-hover;
+    text-decoration: underline;
+  }
+}
+
+.btn--large {
+  padding: tokens.$space-md tokens.$space-xl;
+  font-size: tokens.$font-size-lg;
+}
+
+.btn--block {
+  display: flex;
+  width: 100%;
+}

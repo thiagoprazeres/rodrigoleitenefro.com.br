@@ -1,0 +1,24 @@
+@use '../tokens';
+
+.container {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: tokens.$space-md;
+
+  @include tokens.respond-above('sm') {
+    padding-inline: tokens.$space-lg;
+  }
+
+  @include tokens.respond-above('lg') {
+    padding-inline: tokens.$space-xl;
+  }
+}
+
+.container--narrow {
+  max-width: 48rem;
+}
+
+.container--wide {
+  max-width: 80rem;
+}
