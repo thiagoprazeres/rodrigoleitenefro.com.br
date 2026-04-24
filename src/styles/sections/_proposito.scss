@@ -1,0 +1,50 @@
+@use '../tokens';
+
+.proposito {
+  padding-block: tokens.$space-3xl;
+  background: tokens.$color-primary-700;
+  color: tokens.$color-text-inverse;
+
+  @include tokens.respond-above('md') {
+    padding-block: 6rem;
+  }
+}
+
+.proposito__quote {
+  margin: 0;
+  max-width: 40ch;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.proposito__text {
+  font-size: tokens.$font-size-xl;
+  font-weight: tokens.$font-weight-regular;
+  line-height: tokens.$line-height-relaxed;
+  color: tokens.$color-primary-100;
+  margin: 0;
+
+  @include tokens.respond-above('md') {
+    font-size: tokens.$font-size-2xl;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: tokens.$space-xl;
+    height: 2px;
+    background: tokens.$color-gold-500;
+    margin: 0 auto tokens.$space-lg;
+  }
+}
+
+.proposito__cite {
+  display: block;
+  margin-top: tokens.$space-lg;
+  font-size: tokens.$font-size-sm;
+  font-style: normal;
+  font-weight: tokens.$font-weight-semibold;
+  letter-spacing: tokens.$letter-spacing-wide;
+  text-transform: uppercase;
+  color: tokens.$color-gold-500;
+}
