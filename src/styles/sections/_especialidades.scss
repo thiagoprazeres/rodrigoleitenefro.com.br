@@ -109,8 +109,14 @@
 }
 
 .especialidades__note {
-  margin-top: tokens.$space-xl;
-  font-size: tokens.$font-size-sm;
-  color: tokens.$color-text-muted;
+  margin-top: tokens.$space-2xl;
+  padding: tokens.$space-md tokens.$space-lg;
+  border: 1px solid tokens.$color-border;
+  border-left: 3px solid tokens.$color-primary-700;
+  border-radius: tokens.$radius-md;
+  background: tokens.$color-surface;
+  font-size: tokens.$font-size-md;
+  font-weight: tokens.$font-weight-semibold;
+  color: tokens.$color-text-primary;
   text-align: center;
 }

@@ -11,13 +11,18 @@
 
 .sobre__grid {
   display: grid;
-  gap: tokens.$space-xl;
+  gap: tokens.$space-lg;
   align-items: center;
 
   @include tokens.respond-above('md') {
     grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
     gap: tokens.$space-3xl;
   }
+}
+
+.sobre__cta {
+  align-self: flex-start;
+  margin-top: tokens.$space-md;
 }
 
 .sobre__figure {
