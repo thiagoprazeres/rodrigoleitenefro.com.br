@@ -1,0 +1,122 @@
+@use '../tokens';
+
+.legal-page {
+  padding-block: tokens.$space-3xl 6rem;
+
+  @include tokens.respond-above('md') {
+    padding-block: 6rem 8rem;
+  }
+}
+
+.legal-page__header {
+  margin-bottom: tokens.$space-3xl;
+  padding-bottom: tokens.$space-xl;
+  border-bottom: 1px solid tokens.$color-border;
+}
+
+.legal-page__overline {
+  color: tokens.$color-primary-700;
+  font-size: tokens.$font-size-sm;
+  font-weight: tokens.$font-weight-semibold;
+  letter-spacing: tokens.$letter-spacing-wide;
+  text-transform: uppercase;
+  margin: 0 0 tokens.$space-sm;
+}
+
+.legal-page__title {
+  font-size: tokens.$font-size-2xl;
+  font-weight: tokens.$font-weight-extrabold;
+  line-height: tokens.$line-height-tight;
+  color: tokens.$color-text-primary;
+  margin: 0 0 tokens.$space-md;
+
+  @include tokens.respond-above('md') {
+    font-size: tokens.$font-size-3xl;
+  }
+}
+
+.legal-page__updated {
+  color: tokens.$color-text-muted;
+  font-size: tokens.$font-size-sm;
+  margin: 0;
+}
+
+.legal-page__section {
+  margin-bottom: tokens.$space-2xl;
+
+  h2 {
+    font-size: tokens.$font-size-lg;
+    font-weight: tokens.$font-weight-extrabold;
+    color: tokens.$color-text-primary;
+    margin: 0 0 tokens.$space-md;
+  }
+
+  p,
+  li {
+    color: tokens.$color-text-secondary;
+    line-height: tokens.$line-height-relaxed;
+  }
+
+  p + p,
+  p + ul,
+  ul + p {
+    margin-top: tokens.$space-md;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: tokens.$space-md 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: tokens.$space-sm;
+
+    li {
+      position: relative;
+      padding-left: tokens.$space-md;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.65em;
+        width: 0.375rem;
+        height: 0.375rem;
+        border-radius: 50%;
+        background: tokens.$color-gold-500;
+      }
+    }
+  }
+
+  a {
+    color: tokens.$color-primary-700;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus-visible {
+      color: tokens.$color-primary-900;
+    }
+  }
+
+  strong {
+    color: tokens.$color-text-primary;
+    font-weight: tokens.$font-weight-semibold;
+  }
+}
+
+.legal-page__back {
+  margin-top: tokens.$space-3xl;
+  padding-top: tokens.$space-xl;
+  border-top: 1px solid tokens.$color-border;
+
+  a {
+    color: tokens.$color-primary-700;
+    font-weight: tokens.$font-weight-semibold;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+}
