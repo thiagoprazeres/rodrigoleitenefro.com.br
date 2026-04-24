@@ -263,6 +263,60 @@
         </div>
       </section>
 
+      <section class="form-section" id="contato" aria-labelledby="form-headline">
+        <div class="container">
+          <header class="form-section__header">
+            <h2 class="form-section__headline" id="form-headline">Prefere que a gente entre em contato?</h2>
+            <p class="form-section__body">Deixe seu nome e telefone que retornamos via WhatsApp para agendar.</p>
+          </header>
+          <form class="form" id="whatsapp-form" novalidate>
+            <div class="form__field">
+              <label class="form__label" for="form-nome">Nome completo</label>
+              <input
+                class="form__input"
+                id="form-nome"
+                name="nome"
+                type="text"
+                autocomplete="name"
+                required
+                minlength="2"
+                placeholder="Como você gostaria de ser chamado"
+                aria-describedby="form-nome-error"
+              />
+              <p class="form__error" id="form-nome-error" aria-live="polite"></p>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="form-telefone">Telefone</label>
+              <input
+                class="form__input"
+                id="form-telefone"
+                name="telefone"
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                required
+                placeholder="(81) 99999-9999"
+                aria-describedby="form-telefone-error"
+              />
+              <p class="form__error" id="form-telefone-error" aria-live="polite"></p>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="form-email">Email <span class="form__optional">(opcional)</span></label>
+              <input
+                class="form__input"
+                id="form-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="seuemail@exemplo.com"
+              />
+            </div>
+            <button class="btn btn--primary btn--large btn--block" type="submit">Enviar pelo WhatsApp</button>
+            <p class="form__consent">Ao enviar, você será redirecionado para o WhatsApp do Dr. Rodrigo. Seus dados não são armazenados neste site.</p>
+          </form>
+        </div>
+      </section>
+
       <section class="cta-final" id="agendar" aria-labelledby="cta-headline">
         <div class="container container--narrow">
           <div class="cta-final__inner">
@@ -302,6 +356,5 @@
         </div>
       </div>
     </footer>
-    <div id="app"></div>
   </body>
 </html>
