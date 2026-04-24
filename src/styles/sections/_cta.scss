@@ -30,6 +30,7 @@
 }
 
 .cta-final__headline {
+  color: tokens.$color-text-inverse;
   font-size: tokens.$font-size-2xl;
   font-weight: tokens.$font-weight-extrabold;
   line-height: tokens.$line-height-tight;
