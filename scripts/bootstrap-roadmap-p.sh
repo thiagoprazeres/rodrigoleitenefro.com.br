@@ -107,7 +107,7 @@ issue "P10 — Seção Consultório" \
 "fase:prototipacao,tipo:feat"
 
 issue "P11 — CTA final + Footer" \
-"CTA final: \"Agendar consulta\" → \`wa.me/5581993774102\`. Footer: Instagram @dr.rodrigoleitenefro, endereço resumido, CRM 15162 | RQE 300, link política de privacidade (placeholder)." \
+"CTA final: \"Agendar consulta\" → \`wa.me/5581994385112\`. Footer: Instagram @dr.rodrigoleitenefro, endereço resumido, CRM 15162 | RQE 300, link política de privacidade (placeholder)." \
 "fase:prototipacao,tipo:feat"
 
 issue "P12 — SEO meta + OG image" \
@@ -123,7 +123,7 @@ issue "P14 — JSON-LD structured data" \
 "fase:prototipacao,tipo:feat"
 
 issue "P15 — Formulário de captura → WhatsApp" \
-"Form nome + telefone (obrigatórios) + email (opcional). Submit = redirect pra \`wa.me/5581993774102?text=\` com mensagem pré-preenchida. Validação client-side pt-BR (telefone BR). Sem backend." \
+"Form nome + telefone (obrigatórios) + email (opcional). Submit = redirect pra \`wa.me/5581994385112?text=\` com mensagem pré-preenchida. Validação client-side pt-BR (telefone BR). Sem backend." \
 "fase:prototipacao,tipo:feat,prioridade:alta"
 
 issue "P16 — GA4 + GSC wiring" \

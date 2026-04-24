@@ -40,7 +40,7 @@ Consulta especializada para quem quer entender o próprio corpo e participar ati
 
 **CTA primário:**
 `Agendar consulta no WhatsApp`
-→ `wa.me/5581993774102?text=Ol%C3%A1%2C%20Dr.%20Rodrigo.%20Gostaria%20de%20agendar%20uma%20consulta.`
+→ `wa.me/5581994385112?text=Ol%C3%A1%2C%20Dr.%20Rodrigo.%20Gostaria%20de%20agendar%20uma%20consulta.`
 
 **CTA secundário (link discreto):**
 Conhecer o consultório
@@ -152,7 +152,7 @@ Agende sua consulta direto pelo WhatsApp. Atendimento individual, sem pressa.
 
 **CTA:**
 `Agendar consulta no WhatsApp`
-→ `wa.me/5581993774102?text=Ol%C3%A1%2C%20Dr.%20Rodrigo.%20Gostaria%20de%20agendar%20uma%20consulta.`
+→ `wa.me/5581994385112?text=Ol%C3%A1%2C%20Dr.%20Rodrigo.%20Gostaria%20de%20agendar%20uma%20consulta.`
 
 ---
 
@@ -165,7 +165,7 @@ CRM-PE 15162 · RQE 300
 
 **Linha 2 (contato):**
 📍 RioMar Trade Center, Torre 4, Sala 809 · Recife/PE
-📞 [Agendar via WhatsApp](https://wa.me/5581993774102)
+📞 [Agendar via WhatsApp](https://wa.me/5581994385112)
 📸 [@dr.rodrigoleitenefro](https://www.instagram.com/dr.rodrigoleitenefro/)
 
 **Linha 3 (legal, discreta):**
