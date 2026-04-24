@@ -26,6 +26,13 @@ jobs:
       - run: npm run typecheck
 
       - run: npm run build
+        env:
+          VITE_GA_MEASUREMENT_ID: ${{ secrets.VITE_GA_MEASUREMENT_ID }}
+          VITE_GSC_VERIFICATION: ${{ secrets.VITE_GSC_VERIFICATION }}
+          VITE_GOOGLE_ADS_ID: ${{ secrets.VITE_GOOGLE_ADS_ID }}
+          VITE_GOOGLE_ADS_CONVERSION: ${{ secrets.VITE_GOOGLE_ADS_CONVERSION }}
+          VITE_META_PIXEL_ID: ${{ secrets.VITE_META_PIXEL_ID }}
+          VITE_ERROR_BEACON_URL: ${{ secrets.VITE_ERROR_BEACON_URL }}
 
       - name: Deploy to Netlify (preview)
         if: github.event_name == 'pull_request'

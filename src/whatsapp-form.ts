@@ -62,6 +62,7 @@ export const initWhatsAppForm = (): void => {
 
     const message = `Olá, Dr. Rodrigo. Meu nome é ${nome} e gostaria de agendar uma consulta. Telefone: ${telefone}.`;
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.dispatchEvent(new CustomEvent('whatsapp:submit', { detail: { source: 'form' } }));
     window.open(url, '_blank', 'noopener');
   });
 };
