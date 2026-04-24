@@ -22,7 +22,9 @@ Modelo: `claude-opus-4-7`
 - **Médico:** Rodrigo José Barros Rodrigues Leite
 - **Especialidades:** Clínica Médica + Nefrologia
 - **Consultório:** Clínica AEVUM — RioMar Trade Center, Torre 4, Sala 809, Recife/PE
-- **CRM:** 15162 (PE) | **RQE:** 300 (não exibir no site por definição)
+- **CRM:** 15162 (PE) | **RQE:** 300 (exibido no site conforme CFM 2.336/2023)
+- **Rotulagem CFM obrigatória:** `MÉDICO · CRM-PE 15162 · RQE 300` em todo material publicitário
+- ⚠️ **TODO validar com Dr. Rodrigo:** RQE 300 cobre Nefrologia, Clínica Médica ou ambas? A Resolução 2.336 exige RQE próprio por especialidade anunciada. Se só houver RQE para uma, rever copy da outra.
 - **Instagram:** @dr.rodrigoleitenefro
 
 ## Contatos (não publicar sem validação)
@@ -42,6 +44,7 @@ Modelo: `claude-opus-4-7`
 - WCAG AA
 - Commits em português
 - ESLint strict + Prettier
+- **Compliance:** CFM 2.336/2023 (publicidade médica) + LGPD 13.709/2018 (tratamento de dados)
 
 ## Roadmap — GitHub Issues + Milestones + Releases
 
