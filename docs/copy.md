@@ -83,18 +83,27 @@ A nefrologia se tornou caminho natural pela complexidade, pelo impacto na qualid
 **Título:** Nefrologia
 
 **Body:**
-Muita gente ainda associa o nefrologista apenas a casos mais graves — mas não precisa ser assim. Doenças renais costumam evoluir de forma silenciosa, e o acompanhamento pode (e deve) começar cedo.
+Consulta ambulatorial em nefrologia com foco em prevenção, diagnóstico precoce e acompanhamento individualizado. Doenças renais evoluem de forma silenciosa — o cuidado pode (e deve) começar cedo.
 
-O foco é prevenção, diagnóstico precoce e acompanhamento individualizado. Doença renal crônica não precisa limitar sua vida quando há cuidado adequado ao lado.
+**Condições acompanhadas:**
+- Doença renal crônica (DRC)
+- Proteinúria e hematúria
+- Litíase renal (cálculos)
+- Doenças císticas renais
+- Infecções urinárias recorrentes
 
 ### Card 2 — Clínica Médica
 
 **Título:** Clínica Médica
 
 **Body:**
-Atendimento integral ao adulto: avaliação completa, conduta baseada em evidência e acompanhamento que enxerga a pessoa antes do sintoma. Hipertensão, diabetes, risco cardiovascular e as condições que exigem olhar contínuo.
+Consulta ambulatorial em clínica médica para o adulto: avaliação completa, conduta baseada em evidência e acompanhamento que enxerga a pessoa antes do sintoma.
 
-> **Observação pro desenvolvedor:** ⚠️ TODO — validar com o Dr. Rodrigo a lista exata de condições acompanhadas (ex.: DRC, hipertensão, diabetes renal, litíase, proteinúria, infecções urinárias recorrentes, pré-diálise). Lista acima é inferência; trocar assim que tiver confirmação.
+**Condições acompanhadas:**
+- Hipertensão arterial
+- Diabetes
+- Risco cardiovascular
+- Condições crônicas que exigem acompanhamento contínuo
 
 **Nota rodapé da seção (discreto):**
 Atendimento **apenas para adultos** · **Não atende pediatria**
@@ -169,7 +178,7 @@ CRM-PE 15162 · RQE 300
 📸 [@dr.rodrigoleitenefro](https://www.instagram.com/dr.rodrigoleitenefro/)
 
 **Linha 3 (legal, discreta):**
-© 2026 Dr. Rodrigo Leite · Site por [Cafeína Dev](https://cafeina.dev)
+© 2026 Dr. Rodrigo Leite · Site por [Apply Brasil](https://applybrasil.com/)
 
 ---
 
