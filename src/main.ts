@@ -1,6 +1,4 @@
 import './styles/main.scss';
+import { initWhatsAppForm } from './whatsapp-form';
 
-const app = document.querySelector<HTMLDivElement>('#app');
-if (!app) throw new Error('#app não encontrado');
-
-app.innerHTML = `<p>em construção</p>`;
+initWhatsAppForm();

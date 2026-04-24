@@ -1,0 +1,91 @@
+@use '../tokens';
+
+.form-section {
+  padding-block: tokens.$space-3xl;
+  background: tokens.$color-background;
+
+  @include tokens.respond-above('md') {
+    padding-block: 6rem;
+  }
+}
+
+.form-section__header {
+  max-width: 48ch;
+  margin-bottom: tokens.$space-xl;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.form-section__headline {
+  font-size: tokens.$font-size-2xl;
+  font-weight: tokens.$font-weight-extrabold;
+  line-height: tokens.$line-height-tight;
+  margin: 0 0 tokens.$space-sm;
+
+  @include tokens.respond-above('md') {
+    font-size: tokens.$font-size-3xl;
+  }
+}
+
+.form-section__body {
+  color: tokens.$color-text-secondary;
+  margin: 0;
+}
+
+.form {
+  max-width: 32rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$space-md;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$space-xs;
+}
+
+.form__label {
+  font-size: tokens.$font-size-sm;
+  font-weight: tokens.$font-weight-semibold;
+  color: tokens.$color-text-primary;
+}
+
+.form__optional {
+  color: tokens.$color-text-muted;
+  font-weight: tokens.$font-weight-regular;
+}
+
+.form__input {
+  padding: tokens.$space-sm tokens.$space-md;
+  border: 1px solid tokens.$color-border-strong;
+  border-radius: tokens.$radius-md;
+  background: tokens.$color-surface;
+  font-size: tokens.$font-size-md;
+  line-height: 1.4;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+
+  &:focus-visible {
+    outline: none;
+    border-color: tokens.$color-primary-700;
+    box-shadow: 0 0 0 3px tokens.$color-focus-ring;
+  }
+
+  &:user-invalid {
+    border-color: tokens.$color-error-700;
+  }
+}
+
+.form__error {
+  font-size: tokens.$font-size-sm;
+  color: tokens.$color-error-700;
+  min-height: 1em;
+}
+
+.form__consent {
+  font-size: tokens.$font-size-sm;
+  color: tokens.$color-text-muted;
+  text-align: center;
+  margin: tokens.$space-xs 0 0;
+}
