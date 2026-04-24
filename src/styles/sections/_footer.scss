@@ -1,0 +1,81 @@
+@use '../tokens';
+
+.footer {
+  background: tokens.$color-primary-900;
+  color: tokens.$color-primary-100;
+  padding-block: tokens.$space-2xl;
+  font-size: tokens.$font-size-sm;
+}
+
+.footer__grid {
+  display: grid;
+  gap: tokens.$space-xl;
+
+  @include tokens.respond-above('md') {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: tokens.$space-3xl;
+  }
+}
+
+.footer__identity {
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$space-xs;
+}
+
+.footer__name {
+  font-size: tokens.$font-size-md;
+  font-weight: tokens.$font-weight-extrabold;
+  color: tokens.$color-text-inverse;
+  margin: 0;
+}
+
+.footer__tagline {
+  color: tokens.$color-primary-100;
+  margin: 0;
+}
+
+.footer__crm {
+  color: tokens.$color-neutral-400;
+  font-size: tokens.$font-size-xs;
+  letter-spacing: tokens.$letter-spacing-wide;
+  margin: 0;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$space-sm;
+  font-style: normal;
+}
+
+.footer__contact a {
+  color: tokens.$color-gold-500;
+  text-decoration: none;
+
+  &:hover {
+    color: tokens.$color-gold-100;
+    text-decoration: underline;
+  }
+}
+
+.footer__legal {
+  margin-top: tokens.$space-xl;
+  padding-top: tokens.$space-lg;
+  border-top: 1px solid rgba(tokens.$color-primary-100, 0.15);
+  color: tokens.$color-neutral-400;
+  font-size: tokens.$font-size-xs;
+  display: flex;
+  flex-wrap: wrap;
+  gap: tokens.$space-xs;
+  justify-content: space-between;
+}
+
+.footer__legal a {
+  color: tokens.$color-primary-100;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

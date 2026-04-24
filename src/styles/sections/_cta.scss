@@ -1,0 +1,56 @@
+@use '../tokens';
+
+.cta-final {
+  padding-block: tokens.$space-3xl;
+  background: tokens.$color-primary-700;
+  color: tokens.$color-text-inverse;
+
+  @include tokens.respond-above('md') {
+    padding-block: 6rem;
+  }
+}
+
+.cta-final__inner {
+  max-width: 48ch;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$space-md;
+  align-items: center;
+}
+
+.cta-final__eyebrow {
+  color: tokens.$color-gold-500;
+  font-size: tokens.$font-size-sm;
+  font-weight: tokens.$font-weight-semibold;
+  letter-spacing: tokens.$letter-spacing-wide;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cta-final__headline {
+  font-size: tokens.$font-size-2xl;
+  font-weight: tokens.$font-weight-extrabold;
+  line-height: tokens.$line-height-tight;
+  margin: 0;
+
+  @include tokens.respond-above('md') {
+    font-size: tokens.$font-size-3xl;
+  }
+}
+
+.cta-final__body {
+  color: tokens.$color-primary-100;
+  margin: 0;
+}
+
+.cta-final__button {
+  margin-top: tokens.$space-md;
+  background: tokens.$color-gold-500;
+  color: tokens.$color-primary-900;
+
+  &:hover:not(:disabled) {
+    background: tokens.$color-gold-600;
+  }
+}
