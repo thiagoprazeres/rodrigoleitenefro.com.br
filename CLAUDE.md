@@ -27,14 +27,13 @@ Modelo: `claude-opus-4-7`
 
 ## Contatos (não publicar sem validação)
 
-- **WhatsApp Business (leads):** 5581993774102 ← CTA principal do site
+- **WhatsApp (leads, bio IG):** 5581994385112 ← CTA principal do site
 - **Consultório:** 5581943851112
 - **Pessoal (NUNCA publicar):** 5581991604040
 
 ## CTA principal
 
-`wa.me/5581993774102` — WhatsApp Business chip novo do Dr. Rodrigo (decisão confirmada).
-⚠️ Atualizar link da bio do Instagram (hoje aponta para 5581994385112) antes do launch.
+`wa.me/5581994385112` — número alinhado com a bio atual do Instagram do Dr. Rodrigo.
 
 ## Padrões
 

@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '5581993774102';
+const WHATSAPP_NUMBER = '5581994385112';
 
 const onlyDigits = (value: string): string => value.replace(/\D+/g, '');
 
